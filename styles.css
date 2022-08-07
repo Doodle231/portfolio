@@ -6,16 +6,14 @@
 body { 
     overflow-x: hidden;
     background-image: url("./assets/maingbg.png");
-    width:100vw;  
+    width:100vw; 
     height:100vh; 
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
 }
 
-.homepage { 
-    background-image: url("./assets/maingbg.png");
-}
+
 button { 
     background-color: rgb(46, 221, 46);
     width:100px;
@@ -38,28 +36,101 @@ button:hover {
 }
 
 
+
+.wrapper { 
+    display:flex; 
+
+    padding-right:10%;
+  
+}
+
 .navbar { 
     display: flex;
     position:absolute; 
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     color:white; 
-    right:10%; 
-    top:1%; 
-    width:500px; 
-  
-   
-    z-index: 999;
+    background-color: rgb(17, 10, 43);
+    width:100vw; 
+    top:0; 
+    position:fixed; 
+    z-index: 4;
+     justify-content: right;
+     gap:10px; 
+     margin-left:-10px; 
+    height:50px; 
 
 }
+
+
+.activeham {
+    display:none; 
+    flex-direction: column;
+    width:100%; 
+    height:500px;  
+    background-color: rgb(85, 64, 124);
+    position:absolute; 
+    z-index: 999;
+    left:5px; 
+    font-size: 26px;
+    text-align: center;
+    column-count: 20px;
+}
+
+.hamnavtitle { 
+    font-style: italic;
+    font-weight:400; 
+    margin-top:20px; 
+}
+.hamlinks { 
+  
+    margin-top:5%; 
+}
+
+
+ul:hover { 
+    background-color: rgb(56, 209, 209);
+}
+
+
+
+.close { 
+    position: absolute;
+    top:0; 
+    right:5%; 
+    font-size: 36px;
+}
+
+.close:hover { 
+    color:blue; 
+    transform: scale(1.5);
+
+}
+
+
+#ham {
+    height:80%; 
+    padding-top:5px; 
+    position:absolute; 
+    right:10%; 
+    display:none; 
+}
+
+
 
 .icon{
 
     position:absolute; 
-    top:-1%; 
-    left:2%; 
+    z-index: 5; 
+    top:-10px; 
+    position:fixed; 
+   
+   
     
 }
+
+
+
 
 .hero { 
  
@@ -74,14 +145,18 @@ button:hover {
 }
 
 
+
 .hero > h2 { 
 
     font-weight:300; 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
      line-height:1.7rem; 
-    margin-top:-40px; 
+    margin-top:-30px; 
+    
    
 }
+
+
 
 
 
@@ -103,6 +178,8 @@ flex-direction: row;
 justify-content: space-evenly;
 font-size: .7rem;
 flex-wrap: wrap;
+margin-left:50px; 
+
 
 
 }
@@ -158,7 +235,7 @@ width:40%;
 }
 
 .tech { 
-    height:1000px; 
+    height:1300px; 
     background-size:contain;
     background-repeat: no-repeat;
     margin-top:5%; 
@@ -226,13 +303,15 @@ width:40%;
     width:80%; 
     height:fit-content;  
     border-radius: 40px;
-    background-color: rgba(66, 21, 65, 0.9);
+    background-color: rgba(43, 28, 109, 0.1);
     margin-left:10%; 
-   margin-top:10%; 
 
+  margin-top:2%; 
    text-align: center;
    color:rgb(218, 212, 212); 
    z-index: 999;
+   padding-bottom:10px; 
+   padding-top:10px; 
    
 }
 
@@ -243,12 +322,14 @@ p {
 }
 
 .contact { 
-    background-color: purple;
+    background-color: rgb(172, 26, 185); 
     width:100%; 
     height:100vh;  
-
+    
     margin-left:-10px;
     position:relative; 
+    z-index: 0;
+  
 
 }
 
@@ -297,8 +378,26 @@ p {
     margin-left:10%; 
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 780px) {
   
+
+.activeham { 
+    display:block; 
+}
+
+#ham {
+    display:block; 
+}
+    .wrapper { 
+        display:none; 
+    }
+
+
+
+body { 
+ 
+    background-size: cover
+}
 p { 
    padding-left:0; 
    padding-right:0; 
@@ -329,9 +428,7 @@ p {
     margin:auto; 
 }
 
- .navbar { 
-    display:none; 
- }
+
 
  body { 
     height:200vh; 
@@ -361,7 +458,7 @@ p {
     margin-top:5%; 
     font-size:22px; 
     width:170%; 
-
+ 
     padding-right:5%;
 
 }
@@ -379,7 +476,7 @@ p {
         height:fit-content;  
         font-size: 16px; 
         margin-left:0; 
-        height:1300px; 
+        z-index: 999;
         margin-top:250px;  
         
     }
@@ -387,7 +484,7 @@ p {
     .contact { 
         margin-left:-10px; 
     
-        margin-top: 0; 
+        margin-top: -400px; 
         width:100%; 
     }
 
@@ -411,7 +508,7 @@ p {
     }
 
     .card { 
-        width:90%; 
+        width:70%; 
         margin-top:20%; 
     }
    
@@ -421,56 +518,17 @@ p {
 
   
 
-  @media (min-width: 480px) and (max-width: 980px) {
-
-  .cards { 
-    width:100%; 
-  }
-
-    .card { 
-        width:80%; 
-        margin-top:10%; 
-    }
-
-    .screenshot:hover { 
-        transform: scale(1.2);
-        margin-left:5px; 
-    }
-
-    .hero { 
-        margin-top:15%;
-    }
-
-    .navbar { 
-        display:none; 
-    }
-    
-    .mainpic { 
-        height:50%; 
-    }
-
-    .hero >h2 {
-        margin-top:10%; 
-    }
+  @media (min-width: 790px) and (max-width: 980px) {
 
     body { 
-        height:210vh; 
-    }
-
-    .aboutoverlay{
-        margin-top:120%; 
-        
-    }
+    background-size: cover;
+    height:220vh; 
     
-    .contactform{
-       position:absolute; 
-       bottom:0; 
-
     }
 
-    .hero >h2 { 
-
-   margin-top:5%; 
-  
+    .card { 
+        width:70%; 
+        margin-top:25%; 
     }
+
   }

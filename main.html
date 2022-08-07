@@ -5,40 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DanRoyals.com</title>
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> 
 </head>
 <body>
-    <div class="homepage">
+    
 
 
+    <div class="navbar">
+        
+       <div class="activeham"> 
+        <div class="hamnavtitle">Navigation Menu</div>
+       <div class="close">X</div>
+        <div class="hamlinks">
+       <ul id ="home">Home</ul>
+       <ul>Porfolio</ul>
+       <ul>Contact</ul>
+       <ul>Github</ul>
+       <ul>About</ul>  
     </div>
+       </div>
 
-<img class="icon" src ="/assets/logo.png"></div>
-
-
-<div class="navbar">
-
+    <img class ="hamburger" src ="./assets/hamburger.png" id ="ham"></img>
+    <div class="wrapper">
     <ul>Home</ul>
     <ul>Porfolio</ul>
     <ul>Contact</ul>
     <ul>Github</ul>
     <ul>About</ul>  
+
+
+
+</div>
 </div>
 
+
+<img class="icon" src ="/assets/logo.png">
 
 
 
 
 <section class ="hero">
     <img class ="mainpic" src ="./assets/profilepic.png"></img>
-    <h1>UX designer and Developer at your service!</h1>
+    <h1>UX designer and developer at your service!</h1>
     <h2>I am seeking a UX design or developer position at a small company or 
         startup. I enjoy designing websites and the entire creative process. I am
-    well rounded in terms of coding and UX design.   </h2>
+    well rounded in terms of coding and UX design. Here are a few of my projects!   </h2>
 
 </section>
 
-<div class="cards">
-    <div class="card">
+<div class="cards" >
+    <div class="card" >
      <div class="cardtop"></div>
      
 
@@ -46,7 +62,7 @@
      <div class="cardbottom">
      <h1>Attendance Tracker</h1>
      <h2>Javascript, Firebase</h2>
-     <button>Github</button>
+     <button id = "attendancegit">Github</button>
      <button>Live</button>
     </div>
     </div>
@@ -59,8 +75,8 @@
     <div class="cardbottom">
     <h1> Study App</h1>
     <h2>Javascript, 2 API's </h2>
-    <button>Github</button>
-    <button>Live</button>
+    <button id = "quizgit">Github</button>
+    <button id ><a href ="https://github.com/Doodle231/quizapp"></a>Live</button>
 </div>
 </div>
 </div>
@@ -163,8 +179,10 @@
 </body>
 
 <link rel="stylesheet" href="styles.css">
-   
-<script type="module" src="main.js"></script>
-
+<script src="bower_components/aos/dist/aos.js"></script> 
+<script>
+    AOS.init();
+  </script>
+<script src="main.js"></script>
 
 </html>
