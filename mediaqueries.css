@@ -1,24 +1,20 @@
 @media (min-width: 300px) and (max-width: 780px) {
   
 
-    body { 
-        background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
-     height:250vh; 
-    }
-      
+ html { 
+  background-color: black;
+ }
+
+  body { 
+    background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
+
+}
     .hero { 
-      margin-top:40%; 
+      margin-top:200px; 
     }
 
 
-   .mainpic {
-   right:0; 
-   top:30%;
- 
 
-   }
-
-   
 
     .hero >h2 { 
    
@@ -59,12 +55,14 @@
         height:2000px; 
         background-image: url("./assets/starbg/starry-small.jpg");
         margin-top:25%; 
+        width:100%; 
+        
     }
 
   
     .cardbottom { 
         height:50%; 
-        background-color: rgb(195, 197, 204);
+ 
         color:rgb(5, 2, 2); 
         padding:5%; 
      
@@ -82,16 +80,17 @@
   
   
         .mainpic { 
-            content:url("./assets/profilepics/profilepic-smallphone.jpg");
-            height:40%;
-           margin-top:-5%; 
-            border-radius: 40px;
+            content:url("./assets/profilepics/profilepicnewsmallphone.jpg");
+            height:30%;
+           margin-top:10%; 
+            border-radius: 50%; 
             width:45%; 
-            margin-right:5%; 
-            z-index: -1;
+          
+            z-index: 0;
             background-color: green;
             min-width:200px; 
-           
+            top:25%; 
+            
         }
     
       
@@ -130,11 +129,11 @@
     }
 
 
-      @media (min-width: 400px) and (max-width: 780px) {
+      @media (min-width: 360) and (max-width: 780px) {
       
         
         .mainpic { 
-        content:url("./assets/profilepics/profilepic-largephone.jpg");
+        content:url("./assets/profilepics/profilepicnewlargephone.jpg");
        }
 
        .tech { 
@@ -157,9 +156,9 @@
         }
         body { 
            background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
-           height:180vh; 
+           
            background-size: cover;
-           width:100vw; 
+         
         }
 
      
@@ -179,10 +178,10 @@
         line-height:1; 
         width:100%;
      
-        margin-top:-5%;
+        margin-top:-15%;
       }
         .mainpic { 
-         content:url("./assets/profilepics/profilepic-laptop.jpg");
+         content:url("./assets/profilepics/profilepicnewdesktop.jpg");
          width:30%; 
          height:70%; 
         }
@@ -208,15 +207,22 @@
        }
 
     
-       @media (min-width: 1400px)  {
+       @media (min-width: 1100px)  {
 
         
 
+        body { 
+          background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
+      
+      }
+
+    
         
          .mainpic { 
-            content:url("./assets/profilepics/profilepic-desktop.jpg");
+            content:url("./assets/profilepics/profilepicnewdesktop.jpg");
             width:40%; 
-            height:50%; 
+            height:85%; 
+            top:25%;
            }
 
            .hero > h1 { 
@@ -227,9 +233,11 @@
            .hero > h2 { 
             font-size:3rem;
             line-height: 1;
+            margin-top:-35px; 
+        
            }
      
-           
+          
 
            .card { 
             width:40%; 
@@ -247,6 +255,16 @@
             color:white;
            }
 
+         
+
+           .cardtop { 
+            background-color: 	#4c94f6;
+           }
            
-           
+           .buttonwrapper { 
+         
+           margin-top:10%; 
+           }
+
+
         }
