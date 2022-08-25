@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width: 780px) {
+@media (min-width: 300px) and (max-width: 1100px) {
   
 
  html { 
@@ -9,17 +9,32 @@
     background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
 
 }
-    .hero { 
-      margin-top:200px; 
-    }
-
-
-
-
-    .hero >h2 { 
    
-      width:160%; 
+
+    #wave{
+      content:url("./assets/mobilewave.png");
+      height:150%; 
+      position:absolute; 
+      left:0; 
+      width:100vw; 
+      bottom:-600px; 
+      z-index: 0;
+  }
+
+    .hero  >h1{
+    z-index: 3;
+    font-size:2.2rem; 
+    margin-top:50%; 
+   
+    
     }
+
+
+    .hero >h2 {
+      width:200%; 
+     margin-top:50%; 
+    }
+  
 
     .aboutoverlay { 
       margin-top:100%; 
@@ -81,18 +96,19 @@
   
         .mainpic { 
             content:url("./assets/profilepics/profilepicnewsmallphone.jpg");
-            height:30%;
-           margin-top:10%; 
-            border-radius: 50%; 
-            width:45%; 
-          
+            height:50%; 
+        
+           border-radius: 20%;
+      
+            width:40%;  
+            top:15%; 
+            right:25px; 
+            position:absolute; 
             z-index: 0;
-            background-color: green;
-            min-width:200px; 
-            top:25%; 
+         
             
         }
-    
+
       
     
         .cards {
@@ -129,11 +145,12 @@
     }
 
 
-      @media (min-width: 360) and (max-width: 780px) {
+      @media (min-width: 360px) and (max-width: 1100px) {
       
         
         .mainpic { 
         content:url("./assets/profilepics/profilepicnewlargephone.jpg");
+       
        }
 
        .tech { 
@@ -156,21 +173,14 @@
         }
         body { 
            background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
-           
-           background-size: cover;
+     
          
         }
 
      
       
 
-      .hero > h1 { 
-        font-size: 5rem;
-        width:120%; 
-        line-height:1;
-        margin-top:-20%; 
-        
-      }
+    
 
       .hero > h2 { 
         width:120%; 
@@ -216,18 +226,35 @@
       
       }
 
-    
+    #wave { 
+      content:url("./assets/wave.png");
+      height:170%; 
+      position:absolute; 
+      left:0; 
+      width:100vw; 
+      bottom:-440px; 
+      z-index: -1;
+    }
         
+  
+
+
+
          .mainpic { 
             content:url("./assets/profilepics/profilepicnewdesktop.jpg");
-            width:40%; 
-            height:85%; 
-            top:25%;
+            width:30%; 
+            height:75%; 
+            top:20%;
+            position:absolute; 
+            right:5%; 
+            border-radius: 10%;
            }
 
            .hero > h1 { 
             font-size: 5rem;
             line-height: 1;
+      
+            margin-top:-140px; 
            }
 
            .hero > h2 { 
@@ -240,7 +267,7 @@
           
 
            .card { 
-            width:40%; 
+            width:20%; 
            }
 
            .icon { 

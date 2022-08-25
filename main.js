@@ -28,6 +28,12 @@ attendanceGit.addEventListener("click", function(){
     window.location.href = "https://github.com/Doodle231/Student-Attendance-Tracker";
 })
 
+const monopolyGit = document.getElementById("monpolygit")
+
+monopolyGit.addEventListener("click", function(){
+
+    window.location.href = "https://github.com/Doodle231/Monopoly-";
+})
 
 const closeHamburgerMenu = document.getElementsByClassName("close")[0]
 
@@ -76,3 +82,11 @@ OpenHamburgerMenu.addEventListener("click", function(){
 
     window.location.href = "https://danroyals.com/attendancetracker.html";
   })
+
+  let monopolyApp = document.getElementById("monopolyapp")
+
+  monopolyApp.addEventListener("click", function(){
+
+    window.location.href = "https://danroyals.com/monopoly.html";
+  })
+
