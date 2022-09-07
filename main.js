@@ -90,3 +90,20 @@ OpenHamburgerMenu.addEventListener("click", function(){
     window.location.href = "https://danroyals.com/monopoly.html";
   })
 
+const formSucessPopup = document.getElementById("formsuccess")
+
+const sendButton = document.getElementById("sendbutton")
+
+sendButton.addEventListener("click", function(){
+  console.log("clicked")
+  formSucessPopup.style.display = "flex"
+
+})
+
+const closeFormBtn = document.getElementById("closeformbox")
+
+closeFormBtn.addEventListener("click", function(){
+
+
+  formSucessPopup.style.display ="none"
+})

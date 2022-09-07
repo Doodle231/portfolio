@@ -151,12 +151,25 @@
 
      My first experience with programming was in 1998. I started building simple little angelfire sites. I got 
      involved with doing some very basic HTML building. I eventually moved onto C++. I picked up a book called " Learn C++ in 24
-     hours". C++ takes quite a lot of effort and I did not have a good mentor to help me along. Looking 
-     back I really wish I would have started with a higher level language. Live and learn. 
+     hours". C++ has a very long write time and it takes forever to get anything done. It is a highly performant 
+     language at run time but the write time is very long and drawn out. 
 
      <br><br>
 
-    I am willing to relocate to anywhere within the U.S. I have a strong preference for working
+     I got back into programming around two years ago. I started back up with Python. It is 
+     much more straight forward than C++ but since it is a backend language I also got a little bit bored
+     with it. I started poking around with Javascript and CSS and started building things and 
+     I stuck with that. My process is to find things I want to build and figure out a way to build them. 
+
+     <br><br>
+ 
+     These days I am transitioning into more of a UX design focus. When I first started out I kept all styiling 
+     to a minimum. I only wanted enough styling to test whether or not my Javascript was working. But these days 
+     I enjoy focusing on design related things. I mainly use figma for all design related tasks. I do all sketches
+     and mockups within that software. I'm slowly starting to develop more sophisticated designs and mockups. 
+
+     <br><br>
+      I have a strong preference for working
     for a small company. I think working for a small company or startup would be more 
     interesting because in those roles I would probably need to dabble in a lot of different kinds of 
     tech. It would be fun to be able to pitch in on design related problems as well as get 
@@ -192,17 +205,26 @@
 
 <div class="contact" id ="contact">
 
-    <form class ="contactform">
+    <form class ="contactform" action="https://formsubmit.io/send/eslteacherdan@yahoo.com" method="POST">
         <h1>Contact me</h1>
 <div id="inputwrapper">
-<input id = "nameinput" type = "text" placeholder="Name"></input>
-<input id = "emailinput" type = "text" placeholder="Email"></input>
-<input id ="messageinput" type = "text " placeholder="Please enter your message"></input>
-<button id ="sendbutton">Send Message</button>
+    <input name="_redirect" type="hidden" id="name" value="https://www.danroyals.com">
+<input id = "nameinput" type = "name"  name ="name" placeholder="Name" required></input>
+<input id = "emailinput" type = "email" name="email" placeholder="Email" required></input>
+<input id ="messageinput" type = "text " name ="forminput " placeholder="Please enter your message" required></input>
+<button id ="sendbutton" type ="submit">Send Message</button>
 
 </div>
 </form>
 
+</div>
+
+
+<div id = "formsuccess">
+<h1>Thank you so much for reaching out to me. I will get back 
+    to you as soon as I can. Have a nice day. 
+</h1>
+<div id ="closeformbox">X</div>
 </div>
 
 
