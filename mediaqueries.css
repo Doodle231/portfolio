@@ -1,3 +1,34 @@
+@media (min-width:300px) and (max-width:700px){
+  #design1 { 
+    content:url("./assets/designsmall1.jpg")
+   }
+
+   #design2 { 
+     content:url("./assets/designsmall2.jpg")
+    }
+
+    #design3{ 
+     content:url("./assets/designsmall3.jpg")
+    }
+
+}
+
+@media (min-width:700px){
+  #design1 { 
+    content:url("./assets/design1.jpg")
+   }
+
+   #design2 { 
+     content:url("./assets/design2.jpg")
+    }
+
+    #design3{ 
+     content:url("./assets/design3.jpg")
+    }
+
+}
+
+
 @media (min-width: 300px) and (max-width: 1100px) {
   
 
@@ -6,36 +37,45 @@
  }
 
   body { 
-    background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
+    background:  #4D0059; 
 
 }
    
-
+.screenshot { 
+  width:100%; 
+  height:50%; 
+}
     #wave{
       content:url("./assets/mobilewave.png");
       height:150%; 
       position:absolute; 
       left:0; 
       width:100vw; 
-      bottom:-600px; 
+      bottom:-700px; 
       z-index: 0;
   }
 
     .hero  >h1{
     z-index: 3;
-    font-size:2.2rem; 
-    margin-top:50%; 
-   
+    font-size:3rem; 
+ 
+    width:90%; 
     
     }
 
+    #designs { 
+      margin-top:60%; 
+    }
+    .design { 
+      width:90%; 
+    }
 
     .hero >h2 {
-      width:200%; 
-     margin-top:50%; 
+      width:90%; 
+     
     }
   
-
+   
     .aboutoverlay { 
       margin-top:100%; 
     }
@@ -93,17 +133,23 @@
      }
     
   
+     .hero { 
+      display:flex; 
+      flex-direction: column;
+
+      width:100vw; 
+      
+     }
   
         .mainpic { 
             content:url("./assets/profilepics/profilepicnewsmallphone.jpg");
-            height:50%; 
-        
+            height:20%; 
+         
            border-radius: 20%;
       
-            width:40%;  
-            top:15%; 
-            right:25px; 
-            position:absolute; 
+            width:80%;  
+            
+            
             z-index: 0;
          
             
@@ -114,6 +160,7 @@
         .cards {
             width:100%;
             margin-left:10px; 
+           margin-bottom:5%; 
         
             
         }
@@ -166,13 +213,13 @@
             display:flex; 
         }
     
-      
-
+               
+   
         .card { 
             width:30%; 
         }
         body { 
-           background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
+           background:  #4D0059; 
      
          
         }
@@ -219,10 +266,16 @@
     
        @media (min-width: 1100px)  {
 
-        
+        #designs{
+          height:300vh; 
+          
+        }
+
+
+ 
 
         body { 
-          background: linear-gradient(180deg, #4D0059 0%, rgba(2, 41, 78, 0.79) 100%);
+          background: #4D0059; 
       
       }
 
@@ -242,11 +295,11 @@
 
          .mainpic { 
             content:url("./assets/profilepics/profilepicnewdesktop.jpg");
-            width:30%; 
-            height:75%; 
-            top:20%;
+            width:60%; 
+            height:125%; 
+            top:-10%;
             position:absolute; 
-            right:5%; 
+            left:100%; 
             border-radius: 10%;
            }
 
@@ -258,7 +311,7 @@
            }
 
            .hero > h2 { 
-            font-size:3rem;
+            font-size:2rem;
             line-height: 1;
             margin-top:-35px; 
         
@@ -295,3 +348,5 @@
 
 
         }
+
+     

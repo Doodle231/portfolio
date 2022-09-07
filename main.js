@@ -2,17 +2,7 @@ const parallax = document.getElementsByClassName("tech")[0]
  const activeHam = document.getElementsByClassName("activeham")[0]
 const logo = document.getElementsByClassName("icon")[0]
 
- window.addEventListener("scroll", function(){
 
-    let offset = window.scrollY
-parallax.style.backgroundPositionY = offset * .5 + "px"
-
-
-
-
-
-
-})
 
 const goToStudyGit = document.getElementById("quizgit")
 

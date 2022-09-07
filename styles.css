@@ -7,6 +7,7 @@ html,body{
     overflow-x: hidden;
 margin:0; 
 
+
 }
 body { 
     overflow-x: hidden;
@@ -56,6 +57,7 @@ button:hover {
     background-color: rgb(83, 87, 145);
     cursor: hand; 
 }
+
 
 
 
@@ -169,6 +171,8 @@ ul:hover {
     line-height: 3.2rem;
     z-index: 1;
     font-family: 'Irish Grover', cursive;
+    padding-left:5%; 
+    position:relative; 
 }
 
 
@@ -191,15 +195,16 @@ ul:hover {
 
 .cards { 
 
-    width:100%; 
+    width:90%; 
     display:flex;
 flex-direction: row;
 justify-content: space-around;
 font-size: .7rem;
 flex-wrap: wrap;
 margin-left:50px; 
-margin-top:10px; 
-
+margin-top:200px; 
+padding-left:5%; 
+padding-right:5%; 
 
 
 }
@@ -225,7 +230,7 @@ margin-top:10px;
 }
 
 .screenshot { 
-    width:100%;
+    width:140%;
     height:60%;
     top:0; 
     position:absolute; 
@@ -313,8 +318,43 @@ margin-top:10px;
  
 }
 
+#designs { 
+    height:300vh; 
+    width:100vw; 
+    color:white; 
+   margin-top:5%;
+   display:flex; 
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   position:relative; 
+   align-items: center;
+ 
+   padding-right:10%; 
+   padding-top:5%; 
+
+  
+}
+
+.design { 
+    
+    width:50%; 
+    margin-top:10%; 
+    
+}
+
+#designs >p { 
+    font-size:1rem; 
+    color:yellow; 
+  
+}
 
 
+
+
+#highlight { 
+    color:yellow; 
+}
 
 .aboutoverlay { 
    display:inline-block;
