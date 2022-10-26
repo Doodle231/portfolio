@@ -18,7 +18,7 @@ body {
 
 #logo { 
     position: absolute;
-    left:10%; 
+    left:5%; 
     top:20px; 
     font-size:34px; 
     color:rgb(236, 147, 45); 
@@ -28,15 +28,21 @@ body {
 nav { 
     height:40px; 
     background-color: rgb(236, 236, 236);
-   position:absolute; 
+   position:fixed; 
    top:0; 
    width:100%; 
+   z-index: 1;
 }
 
 #hamburgericon{
     position: absolute;
     right:10%; 
     top:0px;  
+}
+
+.smallbutton:hover { 
+    background-color: rgb(128, 238, 128);
+    cursor:pointer; 
 }
 
 #mobilenavmenu { 
@@ -98,6 +104,11 @@ a{
     color:black; 
     height:40px; 
     margin-left:5%; 
+}
+
+#contactmain:hover { 
+    background-color: #f0f3c4;
+    cursor:pointer; 
 }
 
 .card { 
@@ -227,17 +238,35 @@ form {
 
 @media (min-width:900px){
   
+#screen1 { 
+    content:url("/assets2/design1.jpg")
+}
 
+#screen2 { 
+    content:url("/assets2/design3.jpg")
+}
+
+
+#mockups>h1 { 
+    font-size:4vw; 
+    
+}
+
+#mockups { 
+    padding-top:90px; 
+}
 
     #hero { 
         padding-top:90px; 
+        height:120vh; 
     }
     
     #hero >h1 { 
-        font-size: 64px;
-        width:40%; 
-        padding-top:0px;
+        font-size: 4.5vw; 
+        width:50%; 
+        padding-top:0px;  
         font-weight: 900; 
+        padding-left:5%; 
     }
 
     nav { 
@@ -251,9 +280,9 @@ form {
 
     #links { 
         position:absolute;
-        right:10%; 
+        right:5%; 
        display: flex;
-       margin-right:5%; 
+       
     }
 
     #hamburgericon{
@@ -264,14 +293,115 @@ form {
         color:rgb(105, 9, 160); 
     }
     #hero > p { 
-        font-size: 24px;
-         width:40%; 
-         padding-left:10%; 
+        font-size: 2vw; 
+         width:50%; 
+         padding-left:5%; 
     }
     
     #contactmain { 
-        margin-left:10%; 
-        width:40%; 
+        margin-left:5%; 
+        width:30%; 
+        font-weight: 900;
+        margin-top:60px; 
        
     }
+
+    .top { 
+     position:absolute; 
+     top:-20%;
+     right:10%; 
+     width:25%; 
+     height:60vh;  
+
+    }
+
+    .bottom { 
+        position:absolute; 
+        top:60%;
+        right:10%; 
+        width:25%; 
+        height:60vh;  
+        z-index: 0;
+       }
+
+       .screen{
+        width:100%; 
+       }
+
+       .icons { 
+        width:134px; 
+        height:134px; 
+        
+       }
+
+       #iconswrapper{
+        position:absolute; 
+       
+       margin-top:10%;
+       width:50%; 
+       display:flex;
+       justify-content: space-evenly; 
+       }
+
+       h1 { 
+        font-size:5vw; 
+       }
+
+       #about { 
+        padding-top:90px; 
+        text-align: center;
+        padding-left:0%; 
+       
+       }
+
+       #paragraph-wrapper{
+       
+        width:80%; 
+        padding-left:10%;
+        
+       }
+
+       #about>h1 { 
+        margin-bottom:60px; 
+       
+        padding:0; 
+        margin-left:0; 
+        padding-left:0; 
+       }
+
+       p { 
+        text-align: left;
+        font-size:2.5vw; 
+
+       }
+
+       #contact { 
+        padding-top:90px; 
+        text-align: center;
+       }
+
+       form { 
+        width:40%; 
+        background-color: #5d0f99;
+        margin-left:25%; 
+        padding-left:90px; 
+        padding-right:90px; 
+      
+        padding-top:60px; 
+        padding-bottom:60px; 
+        border-radius: 5%;
+       }
+
+       #sendbutton:hover { 
+        background-color: rgb(107, 202, 107);
+        cursor:pointer; 
+        
+       }
+
+ 
+
+       #sendbutton { 
+        width:50%; 
+       }
+       
 }
