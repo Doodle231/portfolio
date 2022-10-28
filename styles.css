@@ -19,8 +19,8 @@ body {
 #logo { 
     position: absolute;
     left:5%; 
-    top:20px; 
-    font-size:34px; 
+    top:10px; 
+    font-size:24px; 
     color:rgb(236, 147, 45); 
     font-weight:bold; 
 }
@@ -32,6 +32,15 @@ nav {
    top:0; 
    width:100%; 
    z-index: 1;
+}
+.monopoly { 
+    content:url("./assets2/monscreen4-small.png"); 
+    width:100%; 
+}
+
+.studyapp { 
+    content:url("./assets2/studyappsmall.png"); 
+    width:100%;
 }
 
 #hamburgericon{
@@ -46,21 +55,40 @@ nav {
 }
 
 #mobilenavmenu { 
-    display:none; 
+   
     height:100vh; 
- 
     
-    width:80vw; 
+    background-color: rgba(228, 132, 8, 0.1);
+    width:0vw; 
     flex-direction: column; 
-    background-color: rgb(226, 226, 226);
+  
     color:black; 
+    position:absolute; 
+    top:40px; 
+    padding-top:10%; 
+
+    transition-duration: 1200ms;
+    transition-property: width, background-color;
+    ;
+    transition-timing-function: ease-in;
 }
 a{ 
     text-decoration: none;
     color:black; 
-  
+   
     
 }
+
+
+#mobilenavmenu.active{
+    
+    display:flex; 
+    width:80vw;
+    left:0; 
+   
+    background-color: #ebf37b; 
+
+}   
 
 #closenav { 
     position:absolute; 
@@ -227,6 +255,13 @@ form {
  
 }
 
+.icons { 
+    width:90px; 
+    height:90px; 
+    margin-top:15%; 
+    margin-left:5%; 
+}
+
 #messageinput{
     padding-bottom: 150px;  
 }
@@ -235,6 +270,17 @@ form {
     color:yellow; 
     font-size:20px; 
 }
+
+#links { 
+    display:none; 
+}
+
+#mobilelinks { 
+    display:none; 
+}
+
+
+
 
 @media (min-width:900px){
   
@@ -282,6 +328,7 @@ form {
         position:absolute;
         right:5%; 
        display: flex;
+     
        
     }
 
